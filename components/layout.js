@@ -13,8 +13,12 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
       </Head>
       <Header />
-      <main id="site-content" className="flex-grow flex-shrink-0 px-6 sm:px-12 lg:px-16 mx-auto w-full max-w-4xl" role="main">
-        { children }
+      <main
+        id="site-content"
+        className="flex-grow flex-shrink-0 px-6 sm:px-12 lg:px-16 mx-auto w-full max-w-4xl"
+        role="main"
+      >
+        {children}
       </main>
       <Footer />
     </div>
