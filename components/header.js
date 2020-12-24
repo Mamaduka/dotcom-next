@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -7,9 +8,11 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/">
             <a rel="home">
-              <img
+              <Image
                 src="/images/george.png"
-                className="h-16 w-16 border-2 border-gray-200 rounded-full"
+                width="64"
+                height="64"
+                className="rounded-full"
                 alt="George Mamadashvili"
               />
             </a>
