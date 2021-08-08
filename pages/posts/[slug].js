@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from '@/components/layout';
-import Date from '@/components/date';
+import PostDate from '@/components/date';
 import { getAllPosts, getPostBySlug } from '@/lib/api';
 import markdownToHtml from '@/lib/markdown';
 
@@ -20,7 +20,7 @@ export default function Post({ post }) {
           <dl>
             <dt className="sr-only">Published on</dt>
             <dd className="font-mono text-sm text-gray-700">
-              <Date dateString={post.date} />
+              <PostDate dateString={post.date} />
             </dd>
           </dl>
         </header>
