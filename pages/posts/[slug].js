@@ -16,7 +16,7 @@ export default function Post({ post }) {
       <article
         className="mb-12 prose entry lg:prose-lg max-w-none"
         dangerouslySetInnerHTML={{ __html: post.content }}
-      ></article>
+      />
     </Layout>
   );
 }
