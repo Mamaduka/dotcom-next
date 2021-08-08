@@ -4,7 +4,7 @@ import Footer from '@/components/footer';
 
 export default function Layout({ children }) {
   return (
-    <div id="page" className="min-h-screen flex flex-col">
+    <div id="page" className="flex flex-col min-h-screen">
       <Head>
         <title>George Mamadashvili</title>
         <meta name="description" content="A web developer extraordinaire" />
@@ -15,7 +15,7 @@ export default function Layout({ children }) {
       <Header />
       <main
         id="site-content"
-        className="flex-grow flex-shrink-0 px-6 sm:px-12 lg:px-16 mx-auto w-full max-w-4xl"
+        className="flex-grow flex-shrink-0 w-full max-w-4xl px-6 mx-auto sm:px-12 lg:px-16"
         role="main"
       >
         {children}

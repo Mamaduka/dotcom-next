@@ -3,7 +3,7 @@ import Layout from '@/components/layout';
 export default function Home() {
   return (
     <Layout>
-      <article className="entry prose lg:prose-lg max-w-none mb-12">
+      <article className="mb-12 prose entry lg:prose-lg max-w-none">
         <h2 className="">Hi! I’m George</h2>
         <p>
           I’m a developer from Tbilisi, Georgia. I’m working from home almost a
