@@ -9,7 +9,7 @@ export default function Home({ posts, hasPosts }) {
   return (
     <Layout>
       <section className="mb-12 prose prose-blue entry lg:prose-lg max-w-none">
-        <h2>Blog, I’m George 👋</h2>
+        <h2>Hi there, I’m George 👋</h2>
         <p>
           I’m a developer from Tbilisi, Georgia. I’m working from home for
           almost a decade now, I even tried the digital nomad thingy, but that
