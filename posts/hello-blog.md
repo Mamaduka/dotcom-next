@@ -6,6 +6,8 @@ date: '2021-08-08'
 
 ## Using Prism with Next.js
 
+Testing SSR **markdown** files with syntax highlighting.
+
 ```js
 // lib/docs.js
 

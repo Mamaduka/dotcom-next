@@ -5,18 +5,12 @@ export default function Footer() {
         <nav className="font-medium text-gray-800">
           <ul className="flex p-0 m-0 list-none">
             <li className="mr-4">
-              <a
-                className="hover:text-red-500"
-                href="https://twitter.com/Mamaduka"
-              >
+              <a className="underline" href="https://twitter.com/Mamaduka">
                 twitter
               </a>
             </li>
             <li className="mr-4">
-              <a
-                className="hover:text-red-500"
-                href="https://github.com/Mamaduka"
-              >
+              <a className="underline" href="https://github.com/Mamaduka">
                 github
               </a>
             </li>

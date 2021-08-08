@@ -2,10 +2,13 @@ import Layout from '@/components/layout';
 import Date from '@/components/date';
 import { getAllPosts } from '@/lib/api';
 
+// Temp flag for production.
+const SHOW_POSTS = true;
+
 export default function Home({ posts, hasPosts }) {
   return (
     <Layout>
-      <section className="mb-12 prose entry lg:prose-lg max-w-none">
+      <section className="mb-12 prose prose-blue entry lg:prose-lg max-w-none">
         <h2>Blog, I’m George 👋</h2>
         <p>
           I’m a developer from Tbilisi, Georgia. I’m working from home for
@@ -36,7 +39,7 @@ export default function Home({ posts, hasPosts }) {
             {posts.map((post) => (
               <li key={post.slug} className="space-y-1">
                 <a
-                  className="text-xl font-medium text-blue-500 lg:text-2xl hover:underline"
+                  className="text-xl font-medium text-blue-600 lg:text-2xl hover:underline"
                   href={`posts/${post.slug}`}
                 >
                   {post.title}
@@ -59,7 +62,7 @@ export async function getStaticProps() {
   return {
     props: {
       posts,
-      hasPosts: !!posts?.length,
+      hasPosts: !!posts?.length && SHOW_POSTS,
     },
   };
 }
