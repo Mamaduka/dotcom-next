@@ -3,7 +3,7 @@ import Date from '@/components/date';
 import { getAllPosts } from '@/lib/api';
 
 // Temp flag for production.
-const SHOW_POSTS = true;
+const SHOW_POSTS = false;
 
 export default function Home({ posts, hasPosts }) {
   return (
