@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '@/components/layout';
+import Date from '@/components/date';
 import { getAllPosts, getPostBySlug } from '@/lib/api';
 import markdownToHtml from '@/lib/markdown';
 
@@ -14,10 +15,20 @@ export default function Post({ post }) {
         />
         <meta name="description" content={post.excerpt} />
       </Head>
-      <article
-        className="mb-12 prose entry lg:prose-lg max-w-none"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+      <article className="mb-12 max-w-none">
+        <header>
+          <dl>
+            <dt className="sr-only">Published on</dt>
+            <dd className="font-mono text-sm text-gray-700">
+              <Date dateString={post.date} />
+            </dd>
+          </dl>
+        </header>
+        <section
+          className="prose lg:prose-lg"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+      </article>
     </Layout>
   );
 }
@@ -26,6 +37,7 @@ export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.slug, [
     'title',
     'slug',
+    'date',
     'excerpt',
     'content',
   ]);
