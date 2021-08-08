@@ -12,6 +12,7 @@ export default function Post({ post }) {
           href="https://unpkg.com/prismjs@1.24.1/themes/prism-okaidia.css"
           rel="stylesheet"
         />
+        <meta name="description" content={post.excerpt} />
       </Head>
       <article
         className="mb-12 prose entry lg:prose-lg max-w-none"

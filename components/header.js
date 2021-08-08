@@ -18,7 +18,7 @@ export default function Header() {
             </a>
           </Link>
           <span className="h-6 ml-3 border-l border-gray-400 border-solid" />
-          <h1 className="ml-3 text-lg text-gray-800">George Mamadashvili</h1>
+          <p className="ml-3 text-lg text-gray-800">George Mamadashvili</p>
         </div>
       </div>
     </header>
