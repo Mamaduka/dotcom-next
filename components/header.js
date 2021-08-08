@@ -9,7 +9,7 @@ export default function Header() {
           <Link href="/">
             <a rel="home">
               <Image
-                src="/images/george.png"
+                src="/images/george.jpeg"
                 width="64"
                 height="64"
                 className="rounded-full"
