@@ -2,9 +2,6 @@ import Layout from '@/components/layout';
 import PostDate from '@/components/date';
 import { getAllPosts } from '@/lib/api';
 
-// Temp flag for production.
-const SHOW_POSTS = false;
-
 export default function Home({ posts, hasPosts }) {
   return (
     <Layout>
@@ -12,7 +9,7 @@ export default function Home({ posts, hasPosts }) {
         <h1>Hi there, I’m George 👋</h1>
         <p>
           I’m a developer from Tbilisi, Georgia. I’m working from home for
-          almost a decade now. I even tried the digital nomad thingy. But that
+          almost a decade now. I even tried the digital nomad thingy, but that
           all changed when the Fire Nation attacked.
         </p>
         <p>
@@ -58,11 +55,18 @@ export default function Home({ posts, hasPosts }) {
 }
 
 export async function getStaticProps() {
-  const posts = getAllPosts(['title', 'slug', 'excerpt', 'date']);
+  const posts = getAllPosts([
+    'title',
+    'slug',
+    'excerpt',
+    'date',
+    'isPublished',
+  ]);
+
   return {
     props: {
       posts,
-      hasPosts: !!posts?.length && SHOW_POSTS,
+      hasPosts: !!posts?.length,
     },
   };
 }
