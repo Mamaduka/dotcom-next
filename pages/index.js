@@ -8,7 +8,7 @@ export default function Home({ posts, hasPosts }) {
       <section className="mb-12 prose prose-blue entry lg:prose-lg max-w-none">
         <h1>Hi there, I’m George 👋</h1>
         <p>
-          I’m a developer from Tbilisi, Georgia. I’m working from home for
+          I’m a developer from Tbilisi, Georgia. I’ve been working from home for
           almost a decade now. I even tried the digital nomad thingy, but that
           all changed when the Fire Nation attacked.
         </p>
