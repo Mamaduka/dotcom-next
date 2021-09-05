@@ -10,7 +10,7 @@ isPublished: false
 
 Testing SSR **markdown** files with syntax highlighting.
 
-```js
+```js{8-9}
 // lib/docs.js
 
 import fs from 'fs';

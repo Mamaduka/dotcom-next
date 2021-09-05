@@ -1,6 +1,15 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
+.remark-highlight-code-line {
+  background-color: #374151;
+  display: block;
+  margin-right: -1.5em;
+  margin-left: -1.5em;
+  padding-right: 1.5em;
+  padding-left: 1.25em;
+  border-left: 0.25em solid #ae81ff;
+}
 
 /* Start purging... */
 @tailwind components;
